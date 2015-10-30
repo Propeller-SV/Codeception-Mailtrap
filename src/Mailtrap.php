@@ -59,8 +59,8 @@ class Mailtrap extends Module
     public function _initialize()
     {
         $this->client = new Client([
--            'base_url' => [$this->baseUrl, ['version' => $this->config['version']]],
--            'defaults' => [
+            'base_url' => [$this->baseUrl, ['version' => $this->config['version']]],
+            'defaults' => [
                 'headers' => ['Api-Token' => $this->config['client_id']],
             ],
         ]);
